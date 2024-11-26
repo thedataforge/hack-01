@@ -39,6 +39,13 @@ Examples:
 - An error pattern detection system for API logs
 - An anomaly detection system for API usage patterns
 
+### 5. Business Intelligence & Operations
+Examples:
+- An AI sales assistant that helps with lead qualification and follow-ups
+- A runway calculator that helps startups forecast cash flow and burn rate
+- A revenue forecasting tool that analyzes historical transaction data
+
+
 ## Judging Criteria
 
 ### Base Points (90 points total)
