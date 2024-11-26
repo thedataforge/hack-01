@@ -9,9 +9,10 @@
 - **Website**: [hackdataforge.com](https://hackdataforge.com)
 
 ## Submission Process
-Participants must:
-1. Fork the repository
-2. Open a Pull Request (PR) to submit their project (follow the PR template)
+
+Follow the submission format in the [Submission](https://github.com/thedataforge/hack-01/blob/main/SUBMISSION.md) file.
+
+View an [example submission](https://github.com/thedataforge/hack-01/pull/3).
 
 ## Themes
 
