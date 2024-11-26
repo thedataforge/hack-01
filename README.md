@@ -77,7 +77,7 @@ Examples:
 
 ## Judges
 - Andy (Laminar)
-- Roy (Unified)
+- Alexey (Unified)
 - Mark (Shakudo)
 - Sahand (NotificationAPI)
 - Om (3rd Party)
