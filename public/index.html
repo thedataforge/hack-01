@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unified Transfer App</title>
+</head>
+<body>
+  <h1>Unified Transfer App</h1>
+  <form action="/transfer" method="POST" id="transfer-form">
+    <label for="fromConnectionId">From Connection ID:</label>
+    <input type="text" id="fromConnectionId" name="fromConnectionId" required />
+
+    <label for="toConnectionId">To Connection ID:</label>
+    <input type="text" id="toConnectionId" name="toConnectionId" required />
+
+    <label for="type">Type:</label>
+    <select id="type" name="type" required>
+      <option value="accounting">Accounting</option>
+      <option value="hris">HRIS</option>
+      <option value="ats">ATS</option>
+      <!-- Add more as needed -->
+    </select>
+
+    <button type="submit">Transfer Data</button>
+  </form>
+
+  <script>
+    document.getElementById('transfer-form').addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const form = event.target;
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: formData,
+        });
+
+        const result = await response.json();
+        alert(result.success ? 'Transfer successful!' : 'Transfer failed!');
+      } catch (error) {
+        console.error(error);
+        alert('An error occurred.');
+      }
+    });
+  </script>
+</body>
+</html>
